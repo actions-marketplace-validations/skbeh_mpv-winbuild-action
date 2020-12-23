@@ -1,4 +1,5 @@
 name: mpv-win-build
+description: Building mpv for Windows
 
 runs:
   using: 'docker'
