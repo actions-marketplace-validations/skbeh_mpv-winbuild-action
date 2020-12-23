@@ -1,5 +1,5 @@
 #!/bin/sh
-wget -qO- https://github.com/shinchiro/mpv-winbuild-cmake/archive/master.zip | unzip
+wget https://github.com/shinchiro/mpv-winbuild-cmake/archive/master.zip && unzip master.zip && rm master.zip
 cd mpv-winbuild-cmake-master
 mkdir build64
 cd build64
