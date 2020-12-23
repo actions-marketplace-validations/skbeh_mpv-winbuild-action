@@ -10,4 +10,5 @@ RUN pacman -Syyu --noconfirm \
   && pip3 install --no-cache-dir rst2pdf mako
 
 COPY --chown=user:user build.sh /home/user/
+RUN chmod 755 build.sh
 ENTRYPOINT ["./build.sh"]
