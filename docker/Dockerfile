@@ -9,5 +9,5 @@ RUN pacman -Syyu --noconfirm \
   && pacman -S -cc --noconfirm \
   && pip3 install --no-cache-dir rst2pdf mako
 
-COPY --chown user:user build.sh /home/user/
+COPY --chown=user:user build.sh /home/user/
 ENTRYPOINT ["./build.sh"]
