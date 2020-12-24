@@ -16,4 +16,4 @@ RUN su user \
 COPY --chown=user:user build.sh /home/user/
 RUN chmod 755 build.sh
 
-ENTRYPOINT ["./build.sh"]
+ENTRYPOINT ["/home/user/build.sh"]
