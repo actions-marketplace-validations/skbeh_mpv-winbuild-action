@@ -14,5 +14,6 @@ RUN su user \
  && git config --global user.name 'github-actions'
 
 COPY --chown=user:user build.sh /home/user/
+RUN chmod 755 build.sh
 
-ENTRYPOINT ["/home/user/build.sh"]
+ENTRYPOINT ["./build.sh"]
