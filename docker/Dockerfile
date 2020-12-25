@@ -1,6 +1,6 @@
 FROM archlinux:base-devel
 
-RUN useradd user
+RUN useradd -d /home/user user
 
 WORKDIR /home/user
 
@@ -12,4 +12,4 @@ RUN pacman -Syyu --noconfirm \
 COPY --chown=user:user build.sh /home/user/
 RUN chmod 755 build.sh
 
-CMD sudo -u user /home/user/build.sh
+CMD sudo -u user /home/user/build.sH
