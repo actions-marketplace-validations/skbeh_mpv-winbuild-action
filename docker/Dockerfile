@@ -12,4 +12,4 @@ RUN pacman -Syyu --noconfirm \
 COPY --chown=user:user build.sh /home/user/
 RUN chmod 755 build.sh
 
-CMD sudo -u user /home/user/build.sH
+CMD sudo -u user /home/user/build.sh
