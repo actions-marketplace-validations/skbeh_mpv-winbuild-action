@@ -1,6 +1,7 @@
 FROM archlinux:base-devel
 
-RUN useradd -d /home/user user
+RUN useradd user \
+  && chown user:user /home/user
 
 WORKDIR /home/user
 
